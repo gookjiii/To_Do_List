@@ -101,53 +101,6 @@ class _TodoListPageState extends State<TodoListPage> {
               ),
             ),
           ),
-          // SliverToBoxAdapter(
-          //   child: Card(
-          //     child: Container(
-          //       margin: const EdgeInsets.only(left: 0, right: 0, top: 0, bottom: 0),
-          //       child: FloatingActionButton.extended(
-          //         onPressed: () async {
-          //           Navigator.popAndPushNamed(context, AddEditTaskScreen.id);
-          //         },
-          //         backgroundColor: Colors.white.withOpacity(1),
-          //         elevation: 0.0,
-          //         shape: const RoundedRectangleBorder(
-          //           borderRadius: BorderRadius.all(Radius.circular(0)),
-          //         ),
-          //         label: const Text(
-          //           'Новое',
-          //           style: TextStyle(color: Colors.grey, fontSize: 16),
-          //         ),
-          //       ),
-          //     ),
-          //   ),
-          // ),
-          // SliverList(
-          //     delegate:
-          //         SliverChildBuilderDelegate((BuildContext context, int index) {
-          //   return TodoItem(todo: tasks[index], state: _showCompleteTasks);
-          // }, childCount: tasks.length)),
-          // SliverList(
-          //   delegate: SliverChildListDelegate(
-          //     [
-          //       Container(
-          //         margin: const EdgeInsets.only(
-          //             left: 0, right: 0, top: 0, bottom: 30),
-          //         child: FloatingActionButton.extended(
-          //             onPressed: () async {
-          //               Navigator.popAndPushNamed(
-          //                   context, AddEditTaskScreen.id);
-          //             },
-          //             backgroundColor: Colors.white.withOpacity(1),
-          //             elevation: 0.0,
-          //             shape: const RoundedRectangleBorder(
-          //                 borderRadius: BorderRadius.all(Radius.circular(0))),
-          //             label: const Text('Новое',
-          //                 style: TextStyle(color: Colors.grey, fontSize: 16))),
-          //       ),
-          //     ],
-          //   ),
-          // ),
         ],
       ),
       floatingActionButton: FloatingActionButton(
