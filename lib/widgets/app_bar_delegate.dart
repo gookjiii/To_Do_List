@@ -34,7 +34,7 @@ class AppBarDelegate extends SliverPersistentHeaderDelegate {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   ListTile(
-                    contentPadding: const EdgeInsets.only(left: 0),
+                    contentPadding: const EdgeInsets.only(),
                     title: const Text(
                       'Мои дела',
                       style: TextStyle(
