@@ -102,6 +102,5 @@ If you encounter any issues, have suggestions for improvement, or need any assis
 
 Thank you for using To Do List! We hope this app helps you stay organized and manage your tasks effectively.
 
-https://github.com/gookjiii/To_Do_List/assets/107505638/8a944bef-258f-48b7-818f-a211d61b047b
-
+https://github.com/gookjiii/To_Do_List/assets/107505638/444e16aa-9144-4b55-b7c5-6e90d4dbab8a
 
