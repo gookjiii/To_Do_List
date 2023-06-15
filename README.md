@@ -2,10 +2,11 @@
 
 Список дел - это простое мобильное приложение, разработанное для помощи в управлении вашими повседневными задачами и предотвращения пропуска важных событий.
 
-# <img src="https://github.com/gookjiii/To_Do_List/assets/107505638/53b7a080-b0dd-4ca9-89ca-fb42c1199b28" width="191" height="236">
-<img src="https://github.com/gookjiii/To_Do_List/assets/107505638/51a0175f-06f8-433c-bfe7-1ce936a7ff1e" width="216" height="444">
-<img src="https://github.com/gookjiii/To_Do_List/assets/107505638/a1cb099e-8251-4054-83d8-8a9b7ff82bec" width="216" height="444">
-<img src="https://github.com/gookjiii/To_Do_List/assets/107505638/a6e6ddba-c3fe-4f21-a751-464bb0d1eff4" width="216" height="444">
+# <img src="https://github.com/gookjiii/To_Do_List/assets/107505638/f5220379-c413-492f-9645-974eb6ff5f67" width="191" height="236">
+<img src="https://github.com/gookjiii/To_Do_List/assets/107505638/03eab5ad-781c-4c09-abec-92f4ad5866fe" width="216" height="444">
+<img src="https://github.com/gookjiii/To_Do_List/assets/107505638/773b9bd9-4dc2-4384-8477-3b4fa200251a" width="216" height="444">
+<img src="https://github.com/gookjiii/To_Do_List/assets/107505638/ad646d5a-f3b1-4041-b6be-ab6c81abe3d9" width="216" height="444">
+<img src="https://github.com/gookjiii/To_Do_List/assets/107505638/42a0be6b-4396-4d98-9e0e-09209c59fd6f" width="216" height="444">
 
 ## Особенности
 
@@ -22,7 +23,7 @@
 Чтобы установить приложение Список дел, выполните следующие шаги:
 
 1. Убедитесь, что ваш Android-телефон работает на версии ОС 7.0 или более новой.
-2. Скачайте файл APK по следующей ссылке: [Скачать файл APK Список дел](https://disk.yandex.ru/d/4BKESDeddq66uw)
+2. Скачайте файл APK по следующей ссылке: [Скачать файл APK Список дел](https://disk.yandex.ru/d/BDmw7D0bmSHjlA)
 3. Перенесите файл APK на ваше Android-устройство.
 4. Откройте файл APK на вашем Android-устройстве, чтобы начать процесс установки.
 5. Следуйте инструкциям на экране, чтобы завершить установку.
@@ -55,10 +56,11 @@
 
 To Do List is a simple mobile application designed to help you manage your daily tasks and ensure that you don't miss anything important.
 
-# <img src="https://github.com/gookjiii/To_Do_List/assets/107505638/53b7a080-b0dd-4ca9-89ca-fb42c1199b28" width="191" height="236">
-<img src="https://github.com/gookjiii/To_Do_List/assets/107505638/51a0175f-06f8-433c-bfe7-1ce936a7ff1e" width="216" height="444">
-<img src="https://github.com/gookjiii/To_Do_List/assets/107505638/a1cb099e-8251-4054-83d8-8a9b7ff82bec" width="216" height="444">
-<img src="https://github.com/gookjiii/To_Do_List/assets/107505638/a6e6ddba-c3fe-4f21-a751-464bb0d1eff4" width="216" height="444">
+# <img src="https://github.com/gookjiii/To_Do_List/assets/107505638/f5220379-c413-492f-9645-974eb6ff5f67" width="191" height="236">
+<img src="https://github.com/gookjiii/To_Do_List/assets/107505638/03eab5ad-781c-4c09-abec-92f4ad5866fe" width="216" height="444">
+<img src="https://github.com/gookjiii/To_Do_List/assets/107505638/773b9bd9-4dc2-4384-8477-3b4fa200251a" width="216" height="444">
+<img src="https://github.com/gookjiii/To_Do_List/assets/107505638/ad646d5a-f3b1-4041-b6be-ab6c81abe3d9" width="216" height="444">
+<img src="https://github.com/gookjiii/To_Do_List/assets/107505638/42a0be6b-4396-4d98-9e0e-09209c59fd6f" width="216" height="444">
 
 ## Features
 
@@ -75,7 +77,7 @@ To Do List is a simple mobile application designed to help you manage your daily
 To install the To Do List app, follow these steps:
 
 1. Make sure your Android phone is running on OS 7.0 or newer.
-2. Download the APK file from the following link: [Download To Do List APK](https://disk.yandex.ru/d/4BKESDeddq66uw)
+2. Download the APK file from the following link: [Download To Do List APK](https://disk.yandex.ru/d/BDmw7D0bmSHjlA)
 3. Transfer the APK file to your Android device.
 4. Open the APK file on your Android device to begin the installation process.
 5. Follow the on-screen instructions to complete the installation.
@@ -102,5 +104,6 @@ If you encounter any issues, have suggestions for improvement, or need any assis
 
 Thank you for using To Do List! We hope this app helps you stay organized and manage your tasks effectively.
 
-https://github.com/gookjiii/To_Do_List/assets/107505638/444e16aa-9144-4b55-b7c5-6e90d4dbab8a
+https://github.com/gookjiii/To_Do_List/assets/107505638/8a944bef-258f-48b7-818f-a211d61b047b
+
 
