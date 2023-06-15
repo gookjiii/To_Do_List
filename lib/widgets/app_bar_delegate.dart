@@ -2,6 +2,8 @@ import 'dart:math';
 
 import 'package:flutter/material.dart';
 
+import '../common/colors.dart';
+import '../common/fonts_size.dart';
 import '../database/dbmanager.dart';
 
 class AppBarDelegate extends SliverPersistentHeaderDelegate {
@@ -27,30 +29,28 @@ class AppBarDelegate extends SliverPersistentHeaderDelegate {
         return Stack(
           children: [
             Container(
-              color: Colors.brown[100],
               padding: EdgeInsets.only(left: max(75 - scrollPosition, 10)),
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.end,
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   ListTile(
-                    contentPadding: const EdgeInsets.only(),
+                    contentPadding: const EdgeInsets.only(left: 0),
                     title: const Text(
                       'Мои дела',
                       style: TextStyle(
-                        color: Colors.black,
-                        fontWeight: FontWeight.w600,
-                        fontSize: 25,
-                      ),
+                          fontWeight: FontWeight.w600,
+                          height: AppHeights.largeTitle,
+                          color: AppColorsLightTheme.primary,
+                          fontSize: 25),
                     ),
                     subtitle: scrollPosition != 0
                         ? null
-                        : Text(
-                            'Выполнено - $completedTask',
+                        : Text('Выполнено - $completedTask',
                             style: const TextStyle(
-                              color: Colors.white,
-                            ),
-                          ),
+                                fontSize: AppTextSizes.body,
+                                height: AppHeights.body,
+                                color: AppColorsLightTheme.tertiary)),
                   ),
                 ],
               ),
@@ -63,7 +63,7 @@ class AppBarDelegate extends SliverPersistentHeaderDelegate {
                 icon: showCompleted
                     ? const Icon(Icons.visibility_off)
                     : const Icon(Icons.visibility),
-                color: Colors.white,
+                color: AppColorsLightTheme.blue,
               ),
             ),
           ],

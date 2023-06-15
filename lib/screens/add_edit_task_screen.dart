@@ -217,10 +217,11 @@ class AddEditTaskScreenState extends State<AddEditTaskScreen> {
                                 color: descriptionTextController.text.isNotEmpty
                                     ? Color(hexStringToHexInt('#FF3B30'))
                                     : Colors.grey)),
-                        backgroundColor: Colors.white.withOpacity(1),
+                        backgroundColor: Colors.white.withOpacity(0),
                         elevation: 0.0,
                         shape: const RoundedRectangleBorder(
-                            borderRadius: BorderRadius.all(Radius.circular(0))),
+                            borderRadius:
+                                BorderRadius.all(Radius.circular(50))),
                         icon: Icon(
                           Icons.delete,
                           size: 24.0,

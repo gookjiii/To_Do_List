@@ -2,7 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:to_do_app/screens/add_edit_task_screen.dart';
 import 'package:to_do_app/widgets/app_bar_delegate.dart';
+import 'package:to_do_app/src/app.dart';
 
+import '../common/colors.dart';
+import '../common/fonts_size.dart';
 import '../database/dbmanager.dart';
 import '../database/todo_entity.dart';
 import '../widgets/todo_item.dart';
@@ -68,9 +71,9 @@ class _TodoListPageState extends State<TodoListPage> {
           ),
           SliverToBoxAdapter(
             child: Card(
-              color: Colors.brown[100],
+              elevation: 4,
               shape: RoundedRectangleBorder(
-                borderRadius: BorderRadius.circular(15.0),
+                borderRadius: BorderRadius.circular(10.0),
               ),
               child: ListView.builder(
                 shrinkWrap: true,
@@ -81,19 +84,21 @@ class _TodoListPageState extends State<TodoListPage> {
                     return TodoItem(
                         todo: tasks[index], state: _showCompleteTasks);
                   } else {
-                    return FloatingActionButton.extended(
-                      onPressed: () async {
-                        Navigator.popAndPushNamed(
-                            context, AddEditTaskScreen.id);
-                      },
-                      backgroundColor: Colors.brown[100],
-                      elevation: 0.0,
-                      shape: const RoundedRectangleBorder(
-                        borderRadius: BorderRadius.all(Radius.circular(15)),
-                      ),
-                      label: const Text(
-                        'Новое',
-                        style: TextStyle(color: Colors.black, fontSize: 16),
+                    return Padding(
+                      padding:
+                          const EdgeInsets.only(left: 70, bottom: 14, top: 14),
+                      child: InkWell(
+                        onTap: () async {
+                          Navigator.popAndPushNamed(
+                              context, AddEditTaskScreen.id);
+                        },
+                        child: const Text(
+                          'Новое',
+                          style: TextStyle(
+                              fontSize: AppTextSizes.button,
+                              height: AppHeights.body,
+                              color: AppColorsLightTheme.tertiary),
+                        ),
                       ),
                     );
                   }

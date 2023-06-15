@@ -3,6 +3,7 @@ import 'package:to_do_app/database/todo_entity.dart';
 import 'package:flutter/material.dart';
 import 'package:to_do_app/screens/add_edit_task_screen.dart';
 
+import '../common/fonts_size.dart';
 import '../common/utils.dart';
 
 class TodoItem extends StatefulWidget {
@@ -80,14 +81,17 @@ class _TodoItemState extends State<TodoItem> {
       child: Container(
         margin: const EdgeInsets.only(left: 0, right: 0),
         child: ListTile(
+          isThreeLine: true,
           title: Row(
             children: [
               if (widget.todo.important == ImportanceType.high) ...[
                 const Text(' !!  ',
                     style: TextStyle(
-                        color: Colors.red,
-                        fontSize: 20,
-                        fontWeight: FontWeight.bold)),
+                      color: Colors.red,
+                      fontWeight: FontWeight.w400,
+                      fontSize: AppTextSizes.body,
+                      height: AppHeights.body,
+                    )),
                 Flexible(
                   fit: FlexFit.loose,
                   child: Text(
@@ -97,7 +101,7 @@ class _TodoItemState extends State<TodoItem> {
                     style: widget.todo.completed
                         ? const TextStyle(
                             decoration: TextDecoration.lineThrough,
-                            color: Colors.white)
+                            color: Colors.grey)
                         : null,
                     overflow: TextOverflow.ellipsis,
                   ),
@@ -114,7 +118,7 @@ class _TodoItemState extends State<TodoItem> {
                     style: widget.todo.completed
                         ? const TextStyle(
                             decoration: TextDecoration.lineThrough,
-                            color: Colors.white)
+                            color: Colors.grey)
                         : null,
                     overflow: TextOverflow.ellipsis,
                   ),
@@ -130,7 +134,7 @@ class _TodoItemState extends State<TodoItem> {
                     style: widget.todo.completed
                         ? const TextStyle(
                             decoration: TextDecoration.lineThrough,
-                            color: Colors.white)
+                            color: Colors.grey)
                         : null,
                     overflow: TextOverflow.ellipsis,
                   ),
