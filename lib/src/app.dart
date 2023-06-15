@@ -14,8 +14,8 @@ class App extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      localizationsDelegates: [GlobalMaterialLocalizations.delegate],
-      supportedLocales: [const Locale('en'), const Locale('ru')],
+      localizationsDelegates: const [GlobalMaterialLocalizations.delegate],
+      supportedLocales: const [Locale('en'), Locale('ru')],
       // initialRoute: HomeScreen.id,
       debugShowCheckedModeBanner: false,
       title: 'ToDoList App',

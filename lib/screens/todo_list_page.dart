@@ -53,7 +53,7 @@ class _TodoListPageState extends State<TodoListPage> {
             delegate: AppBarDelegate(
               scrollPosition: _scrollPosition,
               showCompleted: _showCompleteTasks,
-              completedTask: database.completed,
+              database: database,
               onPressed: () {
                 setState(() {
                   _showCompleteTasks = !_showCompleteTasks;
@@ -66,33 +66,88 @@ class _TodoListPageState extends State<TodoListPage> {
               },
             ),
           ),
-          const SliverToBoxAdapter(),
-          SliverList(
-              delegate:
-                  SliverChildBuilderDelegate((BuildContext context, int index) {
-            return TodoItem(todo: tasks[index], state: _showCompleteTasks);
-          }, childCount: tasks.length)),
-          SliverList(
-            delegate: SliverChildListDelegate(
-              [
-                Container(
-                  margin: const EdgeInsets.only(
-                      left: 0, right: 175, top: 0, bottom: 30),
-                  child: FloatingActionButton.extended(
+          SliverToBoxAdapter(
+            child: Card(
+              color: Colors.brown[100],
+              shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(15.0),
+              ),
+              child: ListView.builder(
+                shrinkWrap: true,
+                physics: const NeverScrollableScrollPhysics(),
+                itemCount: tasks.length + 1,
+                itemBuilder: (BuildContext context, int index) {
+                  if (index < tasks.length) {
+                    return TodoItem(
+                        todo: tasks[index], state: _showCompleteTasks);
+                  } else {
+                    return FloatingActionButton.extended(
                       onPressed: () async {
                         Navigator.popAndPushNamed(
                             context, AddEditTaskScreen.id);
                       },
-                      backgroundColor: Colors.white.withOpacity(1),
+                      backgroundColor: Colors.brown[100],
                       elevation: 0.0,
                       shape: const RoundedRectangleBorder(
-                          borderRadius: BorderRadius.all(Radius.circular(0))),
-                      label: const Text('Новое',
-                          style: TextStyle(color: Colors.grey, fontSize: 16))),
-                ),
-              ],
+                        borderRadius: BorderRadius.all(Radius.circular(15)),
+                      ),
+                      label: const Text(
+                        'Новое',
+                        style: TextStyle(color: Colors.black, fontSize: 16),
+                      ),
+                    );
+                  }
+                },
+              ),
             ),
           ),
+          // SliverToBoxAdapter(
+          //   child: Card(
+          //     child: Container(
+          //       margin: const EdgeInsets.only(left: 0, right: 0, top: 0, bottom: 0),
+          //       child: FloatingActionButton.extended(
+          //         onPressed: () async {
+          //           Navigator.popAndPushNamed(context, AddEditTaskScreen.id);
+          //         },
+          //         backgroundColor: Colors.white.withOpacity(1),
+          //         elevation: 0.0,
+          //         shape: const RoundedRectangleBorder(
+          //           borderRadius: BorderRadius.all(Radius.circular(0)),
+          //         ),
+          //         label: const Text(
+          //           'Новое',
+          //           style: TextStyle(color: Colors.grey, fontSize: 16),
+          //         ),
+          //       ),
+          //     ),
+          //   ),
+          // ),
+          // SliverList(
+          //     delegate:
+          //         SliverChildBuilderDelegate((BuildContext context, int index) {
+          //   return TodoItem(todo: tasks[index], state: _showCompleteTasks);
+          // }, childCount: tasks.length)),
+          // SliverList(
+          //   delegate: SliverChildListDelegate(
+          //     [
+          //       Container(
+          //         margin: const EdgeInsets.only(
+          //             left: 0, right: 0, top: 0, bottom: 30),
+          //         child: FloatingActionButton.extended(
+          //             onPressed: () async {
+          //               Navigator.popAndPushNamed(
+          //                   context, AddEditTaskScreen.id);
+          //             },
+          //             backgroundColor: Colors.white.withOpacity(1),
+          //             elevation: 0.0,
+          //             shape: const RoundedRectangleBorder(
+          //                 borderRadius: BorderRadius.all(Radius.circular(0))),
+          //             label: const Text('Новое',
+          //                 style: TextStyle(color: Colors.grey, fontSize: 16))),
+          //       ),
+          //     ],
+          //   ),
+          // ),
         ],
       ),
       floatingActionButton: FloatingActionButton(

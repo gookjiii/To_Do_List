@@ -1,3 +1,4 @@
+import 'dart:async';
 import 'dart:convert';
 
 import 'package:logger/logger.dart';
@@ -14,6 +15,10 @@ class TodoDatabase {
   final List<TodoEntity> _uncompletedTasks = [];
   int _completed = 0;
 
+  final _tasksController = StreamController<int>.broadcast();
+
+  Stream<int> get completedStream => _tasksController.stream;
+
   factory TodoDatabase() {
     return _database;
   }
@@ -24,6 +29,7 @@ class TodoDatabase {
     _tasks.add(task);
     _uncompletedTasks.add(task);
     _saveTasks();
+    _emitTaskUpdates();
   }
 
   void removeTask(TodoEntity task) {
@@ -35,6 +41,7 @@ class TodoDatabase {
     _completed = _tasks.length - _uncompletedTasks.length;
 
     _saveTasks();
+    _emitTaskUpdates();
   }
 
   void modifyTask(
@@ -59,6 +66,7 @@ class TodoDatabase {
     task.important = important ?? task.important;
     task.deadline = deadline ?? task.deadline;
     _saveTasks();
+    _emitTaskUpdates();
   }
 
   List<TodoEntity> get tasks {
@@ -103,5 +111,13 @@ class TodoDatabase {
     } catch (e) {
       logger.e('Failed to save tasks: $e');
     }
+  }
+
+  void _emitTaskUpdates() {
+    _tasksController.add(_completed);
+  }
+
+  void dispose() {
+    _tasksController.close();
   }
 }

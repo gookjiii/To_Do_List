@@ -1,9 +1,6 @@
-// ignore_for_file: curly_braces_in_flow_control_structures
-
 import 'package:to_do_app/database/dbmanager.dart';
 import 'package:to_do_app/database/todo_entity.dart';
 import 'package:flutter/material.dart';
-import 'package:to_do_app/main.dart';
 import 'package:to_do_app/screens/add_edit_task_screen.dart';
 
 import '../common/utils.dart';
@@ -73,10 +70,11 @@ class _TodoItemState extends State<TodoItem> {
             },
           );
 
-          if (widget.state == true)
+          if (widget.state == true) {
             return false;
-          else
+          } else {
             return true;
+          }
         }
       },
       child: Container(
@@ -94,11 +92,12 @@ class _TodoItemState extends State<TodoItem> {
                   fit: FlexFit.loose,
                   child: Text(
                     widget.todo.description,
+                    textAlign: TextAlign.center,
                     maxLines: 3,
                     style: widget.todo.completed
                         ? const TextStyle(
                             decoration: TextDecoration.lineThrough,
-                            color: Colors.grey)
+                            color: Colors.white)
                         : null,
                     overflow: TextOverflow.ellipsis,
                   ),
@@ -110,11 +109,12 @@ class _TodoItemState extends State<TodoItem> {
                   fit: FlexFit.loose,
                   child: Text(
                     widget.todo.description,
+                    textAlign: TextAlign.center,
                     maxLines: 3,
                     style: widget.todo.completed
                         ? const TextStyle(
                             decoration: TextDecoration.lineThrough,
-                            color: Colors.grey)
+                            color: Colors.white)
                         : null,
                     overflow: TextOverflow.ellipsis,
                   ),
@@ -125,11 +125,12 @@ class _TodoItemState extends State<TodoItem> {
                   fit: FlexFit.loose,
                   child: Text(
                     widget.todo.description,
+                    textAlign: TextAlign.justify,
                     maxLines: 3,
                     style: widget.todo.completed
                         ? const TextStyle(
                             decoration: TextDecoration.lineThrough,
-                            color: Colors.grey)
+                            color: Colors.white)
                         : null,
                     overflow: TextOverflow.ellipsis,
                   ),
@@ -143,6 +144,18 @@ class _TodoItemState extends State<TodoItem> {
                       fontSize: 15, color: Color(hexStringToHexInt('#248dfc'))))
               : const Text(''),
           leading: Checkbox(
+            side: widget.todo.important == ImportanceType.high
+                ? MaterialStateBorderSide.resolveWith(
+                    (states) => const BorderSide(color: Colors.red, width: 2))
+                : null,
+            fillColor: widget.todo.important == ImportanceType.high
+                ? MaterialStateProperty.resolveWith((states) {
+                    if (states.contains(MaterialState.selected)) {
+                      return null;
+                    }
+                    return Colors.red[100];
+                  })
+                : null,
             value: widget.todo.completed,
             activeColor: widget.todo.important == ImportanceType.high
                 ? Colors.red
