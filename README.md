@@ -2,11 +2,11 @@
 
 Список дел - это простое мобильное приложение, разработанное для помощи в управлении вашими повседневными задачами и предотвращения пропуска важных событий.
 
-![Screenshot_20230615_124805](https://github.com/gookjiii/To_Do_List/screenshots/107505638/1288d9ac-bc8e-4bc4-9a25-3811127846b5)
-![Screenshot_20230615_124905](https://github.com/gookjiii/To_Do_List/screenshots/107505638/c0536316-8e87-417a-a1e4-47aa5076df12)
-![Screenshot_20230615_124916](https://github.com/gookjiii/To_Do_List/screenshots/107505638/2201055e-cc59-41c6-96a8-5ec150291d3e)
-![Screenshot_20230615_125227](https://github.com/gookjiii/To_Do_List/screenshots/107505638/6afec4f9-2236-4856-8abd-a1fcf5f96bf0)
-![Screenshot_20230615_125957](https://github.com/gookjiii/To_Do_List/screenshots/107505638/5df0f7dd-d40a-45d5-85a0-41887e4c616f)
+# <img src="https://github.com/gookjiii/To_Do_List/assets/107505638/f5220379-c413-492f-9645-974eb6ff5f67" width="191" height="236">
+<img src="https://github.com/gookjiii/To_Do_List/assets/107505638/03eab5ad-781c-4c09-abec-92f4ad5866fe" width="216" height="444">
+<img src="https://github.com/gookjiii/To_Do_List/assets/107505638/773b9bd9-4dc2-4384-8477-3b4fa200251a" width="216" height="444">
+<img src="https://github.com/gookjiii/To_Do_List/assets/107505638/ad646d5a-f3b1-4041-b6be-ab6c81abe3d9" width="216" height="444">
+<img src="https://github.com/gookjiii/To_Do_List/assets/107505638/42a0be6b-4396-4d98-9e0e-09209c59fd6f" width="216" height="444">
 
 ## Особенности
 
@@ -56,11 +56,11 @@
 
 To Do List is a simple mobile application designed to help you manage your daily tasks and ensure that you don't miss anything important.
 
-![Screenshot_20230615_124805](https://github.com/gookjiii/To_Do_List/screenshots/107505638/1288d9ac-bc8e-4bc4-9a25-3811127846b5)
-![Screenshot_20230615_124905](https://github.com/gookjiii/To_Do_List/screenshots/107505638/c0536316-8e87-417a-a1e4-47aa5076df12)
-![Screenshot_20230615_124916](https://github.com/gookjiii/To_Do_List/screenshots/107505638/2201055e-cc59-41c6-96a8-5ec150291d3e)
-![Screenshot_20230615_125227](https://github.com/gookjiii/To_Do_List/screenshots/107505638/6afec4f9-2236-4856-8abd-a1fcf5f96bf0)
-![Screenshot_20230615_125957](https://github.com/gookjiii/To_Do_List/screenshots/107505638/5df0f7dd-d40a-45d5-85a0-41887e4c616f)
+# <img src="https://github.com/gookjiii/To_Do_List/assets/107505638/f5220379-c413-492f-9645-974eb6ff5f67" width="191" height="236">
+<img src="https://github.com/gookjiii/To_Do_List/assets/107505638/03eab5ad-781c-4c09-abec-92f4ad5866fe" width="216" height="444">
+<img src="https://github.com/gookjiii/To_Do_List/assets/107505638/773b9bd9-4dc2-4384-8477-3b4fa200251a" width="216" height="444">
+<img src="https://github.com/gookjiii/To_Do_List/assets/107505638/ad646d5a-f3b1-4041-b6be-ab6c81abe3d9" width="216" height="444">
+<img src="https://github.com/gookjiii/To_Do_List/assets/107505638/42a0be6b-4396-4d98-9e0e-09209c59fd6f" width="216" height="444">
 
 ## Features
 
