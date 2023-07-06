@@ -2,10 +2,8 @@
 
 Список дел - это простое мобильное приложение, разработанное для помощи в управлении вашими повседневными задачами и предотвращения пропуска важных событий.
 
-<img src="https://github.com/gookjiii/To_Do_List/assets/107505638/03eab5ad-781c-4c09-abec-92f4ad5866fe" width="216" height="444">
-<img src="https://github.com/gookjiii/To_Do_List/assets/107505638/773b9bd9-4dc2-4384-8477-3b4fa200251a" width="216" height="444">
-<img src="https://github.com/gookjiii/To_Do_List/assets/107505638/ad646d5a-f3b1-4041-b6be-ab6c81abe3d9" width="216" height="444">
-<img src="https://github.com/gookjiii/To_Do_List/assets/107505638/42a0be6b-4396-4d98-9e0e-09209c59fd6f" width="216" height="444">
+<img src="https://github.com/gookjiii/To_Do_List/assets/107505638/d073e4d5-4f1d-4189-aa8e-db6622793f3e">
+
 
 ## Особенности
 
@@ -19,13 +17,17 @@
 - Сохранение данных локально и на сервере
 - Синхронизация данных
 - Локализация
+- State-management реализован с использованием одного из предложенных фреймворков
+- Есть DI (Riverpod, Service Locator, контейнеры зависимостей или библиотеки)
+- Unit-тестами
+- Deeplinks 
 
 ## Установка
 
 Чтобы установить приложение Список дел, выполните следующие шаги:
 
 1. Убедитесь, что ваш Android-телефон работает на версии ОС 7.0 или более новой.
-2. Скачайте файл APK по следующей ссылке: [Скачать файл APK Список дел](https://disk.yandex.ru/d/4BKESDeddq66uw)
+2. Скачайте файл APK по следующей ссылке: [Скачать файл APK Список дел](https://disk.yandex.ru/d/AorA-Z6SUmhDDg)
 3. Перенесите файл APK на ваше Android-устройство.
 4. Откройте файл APK на вашем Android-устройстве, чтобы начать процесс установки.
 5. Следуйте инструкциям на экране, чтобы завершить установку.
@@ -58,10 +60,7 @@
 
 To Do List is a simple mobile application designed to help you manage your daily tasks and ensure that you don't miss anything important.
 
-<img src="https://github.com/gookjiii/To_Do_List/assets/107505638/03eab5ad-781c-4c09-abec-92f4ad5866fe" width="216" height="444">
-<img src="https://github.com/gookjiii/To_Do_List/assets/107505638/773b9bd9-4dc2-4384-8477-3b4fa200251a" width="216" height="444">
-<img src="https://github.com/gookjiii/To_Do_List/assets/107505638/ad646d5a-f3b1-4041-b6be-ab6c81abe3d9" width="216" height="444">
-<img src="https://github.com/gookjiii/To_Do_List/assets/107505638/42a0be6b-4396-4d98-9e0e-09209c59fd6f" width="216" height="444">
+<img src="https://github.com/gookjiii/To_Do_List/assets/107505638/d073e4d5-4f1d-4189-aa8e-db6622793f3e">
 
 ## Features
 
@@ -72,16 +71,20 @@ To Do List is a simple mobile application designed to help you manage your daily
 - Edit existing tasks to update their details.
 - Delete single tasks when they are no longer needed.
 - Show or hide completed tasks for better task visibility and organization.
-- Сохранение данных локально и на сервере
-- Синхронизация данных
-- Локализация
+- Saving data locally and on the server
+- Data synchronization
+- Localization
+- State-management implemented using one of the proposed frameworks
+- There are DI (Riverpod, Service Locator, dependency containers or libraries)
+- Unit tests
+- Deeplinks
 
 ## Installation
 
 To install the To Do List app, follow these steps:
 
 1. Make sure your Android phone is running on OS 7.0 or newer.
-2. Download the APK file from the following link: [Download To Do List APK](https://disk.yandex.ru/d/4BKESDeddq66uw)
+2. Download the APK file from the following link: [Download To Do List APK](https://disk.yandex.ru/d/AorA-Z6SUmhDDg)
 3. Transfer the APK file to your Android device.
 4. Open the APK file on your Android device to begin the installation process.
 5. Follow the on-screen instructions to complete the installation.
