@@ -1,0 +1,17 @@
+{
+    "myTasks": "My tasks",
+    "done": "Done",
+    "importance": "Importance",
+    "save": "SAVE",
+    "delete": "Delete",
+    "doneUntil": "Done until",
+    "needToDo": "What need to do...",
+    "newTask": "New",
+    "no": "No",
+    "low": "Low",
+    "high": "!!High",
+    "unknownError": "Unknown error",
+    "deleteError": "Unable to delete task",
+    "updateError": "Unable to update task",
+    "createError": "Error: Information not saved"
+}
