@@ -20,7 +20,8 @@
 - State-management реализован с использованием одного из предложенных фреймворков
 - Есть DI (Riverpod, Service Locator, контейнеры зависимостей или библиотеки)
 - Unit-тестами
-- Deeplinks 
+- Deeplinks
+- Firebase 
 
 ## Установка
 
@@ -78,6 +79,7 @@ To Do List is a simple mobile application designed to help you manage your daily
 - There are DI (Riverpod, Service Locator, dependency containers or libraries)
 - Unit tests
 - Deeplinks
+- Firebase
 
 ## Installation
 
